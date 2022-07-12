@@ -1,36 +1,30 @@
 package Practice;
 
+import java.util.Scanner;
+
 public class Practice_4 {
     public static void main(String[] args) {
+        System.out.println("We created a new algorithm to take your name and redefine it the ziya way, please enter your first name: ");
+        Scanner name=new Scanner(System.in);
+        String firstname=name.next();
+        String cla= "CLARK";
+        String clar="clark";
 
-        //Write a program to calculate the monthly telephone bills as per the following rule:
-        //Minimum Rs. 200 for up to 100 calls.
-        //Plus Rs. 0.60 per call for next 50 calls.
-        //Plus Rs. 0.50 per call for next 50 calls.
-        //Plus Rs. 0.40 per call for any call beyond 200 calls.
+        if (firstname.startsWith("A") && firstname.endsWith("L")){
+            firstname= firstname.replace("A","B");
+        }else if (firstname.startsWith("B") && firstname.endsWith("L") && firstname.contains("A")){
+            char ch = 'G';
+            firstname= firstname.substring(0,1) + ch + firstname.substring(2,3);
+        }else if (firstname.startsWith("C")&& firstname.endsWith("K") || firstname.startsWith("c") && firstname.endsWith("k")) {
+            if (firstname.equals(cla)){
+                System.out.println("The name you entered is equal to CLARK");
+            } else if (firstname.equals(clar)) {
+                System.out.println("The name you entered is equal to clark");
 
+            }
+        }
 
-        int call=220;
-        double bill=200;
-        String result="";
-
-
-        bill= (call>0 && call<=100)? 200:
-                (call>100 && call<=150)? 200+(50*0.60):
-                        (call>150 && call<=200)? 200+(50*0.50):
-                                 200+((call-100)*0.40);
-
-
-        System.out.println(bill);
-
-
-
-
-
-
-
-
-
+        System.out.println("Processed through our algorithm your name is: "+firstname);
 
     }
 }
