@@ -17,10 +17,13 @@ public class Assignment_19 {
 
         if(name.startsWith("A")&&name.endsWith("L")) {
             name=name.replace("A","B");
+
         }else if (name.startsWith("B")&&name.endsWith("L")&&name.contains("A")){
             name=name.replace(name.charAt(1), 'G');
+
         }else if(name.startsWith("C")&&name.endsWith("K")
         || name.startsWith("c")&&name.endsWith("k")){
+
             if (name.equals(cl)){
                 System.out.println("User Name is equal to CLARK");
             }else if(name.equals(cl2)){
@@ -28,6 +31,7 @@ public class Assignment_19 {
             }else {
                 System.out.println("User Name is not equal to CLARK or Clark");
             }
-        }System.out.println(name);
+        }
+        System.out.println(name);
     }
 }
