@@ -2,7 +2,7 @@ package Assignments;
 
 import java.util.Scanner;
 
-public class Assignment_23 {
+public class A23_ForLoopSum {
     public static void main(String[] args) {
 //        Write a code where user is asked to enter a number.
 //        Find the sum of all the even numbers between 0 to that number (included)

@@ -2,7 +2,7 @@ package Assignments;
 
 import java.util.Scanner;
 
-public class Assignment_29 {
+public class A29_Palindrome {
     /** INTERVIEW QUESTION.
      * Task : Write a program that checks if a String is a Palindrome.
 

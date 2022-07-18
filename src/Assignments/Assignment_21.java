@@ -16,7 +16,8 @@ public class Assignment_21 {
 
         for (int i=1; i<=input; i++){
             fact *= i;
-        }System.out.println(input+"!"+"="+fact);
+        }
+        System.out.println(input+"!"+"="+fact);
 
     }
 }

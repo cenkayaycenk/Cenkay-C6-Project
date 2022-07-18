@@ -2,7 +2,7 @@ package Assignments;
 
 import java.util.Scanner;
 
-public class Assignment_22 {
+public class A22_ForLoopNumDiv {
     public static void main(String[] args) {
 //        Write a code where user is asked to enter a number and check for every number
 //        between 0 to that number to see how many number between 0 to that number

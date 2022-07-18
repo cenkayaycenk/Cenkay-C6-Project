@@ -1,6 +1,6 @@
 package Assignments;
 
-public class Assignment_24 {
+public class A24_ForLoopNum {
     //Write a code where all where prints all the numbers between 0 and 10 (included)
 
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
 package Assignments;
 
-public class Assignment_26 {
+public class A26_ForLoopEvenNum {
     ///Write a program that will print the sum of the even numbers
     // between 0-20 * include . Please use for loop and if statement.
 

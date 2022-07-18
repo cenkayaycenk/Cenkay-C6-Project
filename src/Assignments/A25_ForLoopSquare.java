@@ -2,7 +2,7 @@ package Assignments;
 
 import java.util.Scanner;
 
-public class Assignment_25 {
+public class A25_ForLoopSquare {
     public static void main(String[] args) {
 //        Write a code where user is asked to enter a number:
 //        Calculate the square of all the numbers from 0 to given number and
