@@ -29,16 +29,25 @@ public class A42_GuessNumber {
         Scanner scan = new Scanner(System.in);
         System.out.println("*******WELCOME TO GUESSING GAME******** +\nPlease enter a number between ( 1-10)");
         Random random = new Random();
-        int randomNumber = random.nextInt(10) + 1;int UserInput = scan.nextInt();
-        int guess= 0;
+
+        int UserInput = scan.nextInt();
+
+        int randomNumber;
+        int guess = 0;
+
         do {
-            System.out.println("Your number is "  + UserInput
-                    + " \nNumbers are not matching"+"\nPlease TRY AGAIN !!!");
-            UserInput = scan.nextInt();guess++;
-        } while (UserInput != randomNumber);
+            randomNumber = random.nextInt(10) + 1;
+            System.out.println("Your number is " + UserInput + "\nRandom number was : " + randomNumber
+                    + " \nNumbers are not matching" + "\nPlease TRY AGAIN !!!");
+            UserInput = scan.nextInt();
+            guess++;
+
+        } while
+        (UserInput != randomNumber);
+
         if (UserInput == randomNumber) ;
         System.out.println("Your number is " + UserInput
-                + " \nNumbers are matching"+"\nCongratulations...You WIN !!!");
+                + " \nNumbers are matching" + "\nCongratulations...You WIN !!!");
     }
 }
 

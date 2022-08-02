@@ -26,7 +26,7 @@ make sure you only use the things we have learned so far.
             String rev = "";
 
             for (int j = subString.length() - 1; j >= 0; j--) {
-                rev = rev + subString.charAt(j);
+                rev += subString.charAt(j);
             }
             if (subString.equals(rev)){
                 b1=true;
