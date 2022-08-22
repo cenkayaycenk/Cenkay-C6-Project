@@ -1,0 +1,123 @@
+package StudyHalls.Week5;
+
+public class Session1 {
+    public static void main(String[] args) {
+
+        ////    Write a  program that can reverse  a String
+        ////
+        ////    Ex: Reverse("ABCDE"); ==> EDCBA
+        //      Ex : Java ==> avaJ
+
+        String str="level";
+        //          01234
+
+      //  System.out.println(str.charAt(0));
+        String reversed="";
+
+        //           5-1
+
+        for (int i =str.length()-1 ; i>=0  ; i--) {
+            //       startingP.    endPoint ; inc
+
+
+            reversed+=  str.charAt(i);
+            //reversed=reversed +str.charAt(i)
+
+
+        }
+
+        System.out.println("reversed = " + reversed);
+
+        System.out.println("*****************************");
+
+
+        /** Task : Write a program that checks if a String is a Palindrome.
+                *
+         * Example: input : Java , output: java is not  palindrome
+         * Example: input : kayak , output : kayak is a palindrome
+         * Example: input level , ouput : level is a palindrome
+         *
+         * tip: A palindrome is a word, number, phrase, or other sequence of characters
+         * which reads the same backward as forward, such as madam or racecar.
+         */
+
+
+        String str2="java";
+
+        String strReversed="";
+
+        for (int i = str2.length()-1; i >=0 ; i--) {
+
+            strReversed+=str2.charAt(i);
+
+        }
+
+        System.out.println("strReversed = " + strReversed);
+
+
+        if (str2.equals(strReversed)){
+
+            System.out.println(str2 +" is a palindrome string");
+        }else {
+            System.out.println(str2 +" is not a palindrome string");
+        }
+
+        System.out.println("********************");
+
+        String result="";
+
+        result=(str2.equals(strReversed)) ? " is a palindrome " : " is not a palindrome";
+
+        System.out.println( str2 +result);
+
+
+        System.out.println("********************");
+        System.out.println("********************");
+
+        //(Numbers) FINRA
+        ////    Write a Program which prints out the numbers from 1 to 30
+        // but for numbers which are a multiple of 3, print "FIN" instead of the number
+        // and for numbers which are a multiple of 5, print "RA" instead of the number.
+        // for numbers which are a multiple of both 3 and 5, print "FINRA" instead of the number.
+
+
+        String finra="";
+
+
+
+        for (int i = 1; i <=30 ; i++) {
+
+            //for numbers which are a multiple of both 3 and 5, print "FINRA" instead of the number.
+            //i=3
+
+            //    true &&  false
+            if ( i%3==0 && i%5==0){
+                finra += " FINRA ";
+                //for numbers which are a multiple of 5, print "RA" instead of the number.
+            }else if( i %5==0){
+
+                finra+= " RA ";
+
+                //for numbers which are a multiple of 3, print "FIN" instead of the number
+            }else if(i %3 ==0){
+                finra += " FIN ";
+
+            }else{
+                finra += " "+i+" ";
+
+            }
+
+
+        }
+
+        System.out.println(finra);
+
+        String a="a";
+
+        a+=10;
+
+        System.out.println("a = " + a);//a10
+
+
+    }
+}

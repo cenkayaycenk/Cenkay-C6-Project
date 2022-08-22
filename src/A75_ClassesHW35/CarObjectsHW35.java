@@ -1,6 +1,5 @@
 package A75_ClassesHW35;
 
-import Day25_ClassesAndObjects.CarClass;
 import My_Util.breaking;
 
 import java.util.ArrayList;
